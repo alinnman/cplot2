@@ -322,7 +322,9 @@ def _plot(
     )
 
     if contours_abs is None:
-        contours_abs = 2
+        # contours_abs = 2
+        # Need to disable this default in order to eliminate contour handling on very complex pictures (fractals) 
+        pass
 
     elif contours_abs == "auto":
         assert isinstance(
